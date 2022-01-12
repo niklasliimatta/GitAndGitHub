@@ -13,16 +13,13 @@ Sen käyttöön on pääsääntöisesti kaksi syytä:
 
 ### Mikä [Git](https://git-scm.com) on?
 
-Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspaikka käytettävälle tiedolle ja pitää kirjaa tietoon tehdyistä muutoksista. Ohjelmistotyössä versiohallinnan käyttäminen yhteistyöskentelyyn ja muutosten jäljittämiseen on normi. Alunperin Git:n on kehittänyt suomalainen [Linus Thorvalds](https://fi.wikipedia.org/wiki/Linus_Torvalds).
+Git on hajautetun versiohallinnan menetelmä jossa ideana on tarjota säilytyspaikka käytettävälle tiedolle ja pitää kirjaa tietoon tehdyistä muutoksista. Alunperin Git:n on kehittänyt suomalainen [Linus Thorvalds](https://fi.wikipedia.org/wiki/Linus_Torvalds).
 
 ### Mikä [GitHub](https://github.com/) on?
 
-*GitHub* mahdollistaa myös saman tiedon parissa työskentelyn eri tietokoneilta. Saman tiedon parissa työskennellään kuitenkin usein eri tietokoneilta (mikroluokka, kotikone, jne.).
+*GitHub* mahdollistaa myös saman tiedon parissa työskentelyn eri tietokoneilta.
 
-Toisaalta versiohallinta toimii myös varmuuskopiona työllesi. Näin tieto ei häviä, vaikka tietokoneesi hajoaisi.
-
-*GitHub* (ja myös [GitLab](https://about.gitlab.com/)) ovat palveluita, joissa voidaan pitää Git-muotoisia varastoja (*Repository*). Ne mahdollistavat tiedon jakamisen muille saman tiedon parissa työskenteleville henkilöille. *GitHub*:a olevia repositorio joka on kytketty paikalliseen Git työkansioon on ns. *remote*. *Remote* taas puolestaan tunnetaan Git komennoissa nimellä *Origin*, tosin nimi on vaihdettavissa.  
-
+*GitHub* (ja myös [GitLab](https://about.gitlab.com/)) ovat palveluita, joissa voidaan pitää Git-muotoisia varastoja (*Repository*). Ne mahdollistavat tiedon jakamisen muille saman tiedon parissa työskenteleville henkilöille.
 ---------------
 
 ### Git:n peruskäyttö
@@ -64,8 +61,7 @@ Työhakemiston synkronoiminen *GitHub:n*:
 - Tietojen lataaminen *GitHub* repositoriosta paikalliseen työkansioon: ``` git pull ```  
 
 **GitHub* fork:**
-Ns. *Fork* on *GitHub* repositorio joka syntynyt *fork* toiminnon takia kopiona jonkun toisen *GitHub* repositorista. *Fork* sisältää kaikki samat tiedot kuin alkuperäinen repositorio. *Fork*:n omistaa kopion luonut henkilö joten tietojen lisääminen *Fork* repositorioon on mahdollista.
-
+Ns. *Fork* on *GitHub* repositorio joka syntynyt *fork* toiminnon takia kopiona jonkun toisen *GitHub* repositorista. *Fork* sisältää kaikki samat tiedot kuin alkuperäinen repositorio.
 Git *fork*:n liittyviä Git komentoja
 - *Upstream remoten* lisääminen paikalliseen Git työhakemistoon:   
 ```git remote add upstream git://github.com/GitHubTunnus>/GitHubRepositorio.git>```     
@@ -73,7 +69,7 @@ Git *fork*:n liittyviä Git komentoja
 
 **Haarat eli *branch*:t**:
 
-Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan. Haarassa olevat tiedot yhdistetään lopulta sovelluksen päähaaran (*master* tai *main*) sisältämään lähdekoodiin. 
+Git haara (*branch*) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan.
 
 Git haaroihin liittyvä työskentely:
 - Git haarojen listaaminen: ```git branch```    
@@ -83,11 +79,3 @@ Git haaroihin liittyvä työskentely:
 
 --------------------
 
-### Git ja GitHub toiminta yleisellä tasolla
-
-![Gitin peruskäyttö](https://gitlab.jyu.fi/tie/ohj2/esimerkit/k2020/raw/master/luennot/luento02/git.png)
-
-------------------
-
-Linus Thorvalds
->"*Kun Microsoft alkaa tehdä ohjelmia Linuxille, se tarkoittaa että minä olen voittanut.*"
